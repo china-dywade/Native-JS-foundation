@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-	</head>
-	<body>
-		
-	</body>
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset=" utf-8">  
+<meta name="author" />  
+<title>蚂蚁部落</title> 
+<style> 
+body{
+  height:1200px;
+} 
+#ant{ 
+  height:100px; 
+  width:100px; 
+  background-color:red; 
+  text-align:center; 
+  line-height:100px; 
+  position:fixed;
+} 
+</style> 
+<script type="text/javascript">  
+window.onload=function(){  
+  var odiv = document.getElementById("ant");
+  window.onscroll=function(){ 
+    odiv.innerHTML = document.body.scrollTop || document.documentElement.scrollTop;
+  } 
+} 
+</script>  
+</head>  
+<body >  
+<div id="ant"></div> 
+</body>  
 </html>
